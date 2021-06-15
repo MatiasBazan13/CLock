@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@400;500;700;900&display=swap');
+
+html body{
+    background-color: #ffffff;
+    text-align: center;
+    font-family: 'Big Shoulders Stencil Display', cursive;
+
+}
+.titulo{
+    font-size: 6rem;
+    font-weight: bold;
+    color: #912e2e;
+}
+.caja-reloj{
+    display: inline-block;
+    border-radius: 40px;
+    background: linear-gradient(145deg, #ffffff, #e6e6e6);
+    box-shadow:  25px 25px 40px #cccccc,
+                 -25px -25px 40px #ffffff;
+    padding: 4rem;
+    
+}
+.reloj{
+    color: rgb(70, 68, 68);
+    font-size: 4rem;
+    font-weight: 500;
+    display: flex;
+    padding: 1rem;
+}
