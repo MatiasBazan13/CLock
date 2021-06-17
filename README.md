@@ -1,2 +1,2 @@
 # CLock
-Clock made with neumorphism.
+Digital Clock Responsive  
