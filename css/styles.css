@@ -1,67 +1,110 @@
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@400;500;700;900&display=swap');
-
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+:root{
+    --color-text-principal:#000000;
+    --font-custom: 'Big Shoulders Stencil Display', cursive;
 }
 
-section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.titulo{
-    text-align: center;
-    font-size: 5em;
-    font-weight: bold;
-    color: #8b3c3c;
-}
-
-.reloj{
-    position: relative;
-    width: 35rem;
-    height: 15rem;
-    background: linear-gradient(145deg, #ffffff, #e6e6e6);
-    box-shadow:  25px 25px 40px #cccccc,
+@media (max-width: 600px){
+    .titulo{
+        text-align: center;
+        color: var(--color-text-principal);
+        font-size: 2.50em;
+        font-weight: bold;
+    }
+    .reloj{
+        
+        text-align: center;
+        width: 20rem;
+        margin-left: auto;
+        margin-right: auto;
+        background: linear-gradient(145deg, #ffffff, #e6e6e6);
+        box-shadow:  25px 25px 40px #cccccc,
                  -25px -25px 40px #ffffff;
-    border-radius: 20px;
-    z-index: 1000;
-    border:  1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 20px;
+        border:  1px solid rgba(255, 255, 255, 0.1);
+    }
+    .reloj .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .reloj .container h2{
+        font-size: 3em;
+        font-family: var(--font-custom);
+        color: var(--color-text-principal);
+    }
+    .reloj .container h2:nth-child(odd){
+        padding: 5px 12px;
+        margin: 0 6px;
+        background: rgba(255, 255, 255, 0.5);
+        box-shadow:  0 5px 15px rgba(56, 56, 56, 0.288);
+        border-bottom: 1px solid rgba(54, 53, 53, 0.1);
+        border-right: 1px solid rgba(54, 53, 53, 0.1);
+        border-radius: 10px;
+    }
+    #ampm{
+        position: relative;
+        margin-left: 5px;
+        top: -15px;
+        font-size: 1.2em;
+        font-weight: 700;
+        font-family: var(--font-custom);
+
+    }
 }
-.reloj .container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+@media (min-width: 600px){
+    .titulo{
+        text-align: center;
+        color: var(--color-text-principal);
+        font-size: 4em;
+        
+    }
+    .reloj{
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 35rem;
+        height: 15rem;
+        background: linear-gradient(145deg, #ffffff, #e6e6e6);
+        box-shadow:  25px 25px 40px #cccccc,
+                     -25px -25px 40px #ffffff;
+        border-radius: 20px;
+        border:  1px solid rgba(255, 255, 255, 0.1);
+    }
+    .reloj .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    
+    .reloj .container h2{
+        font-size: 6em;
+        font-family: var(--font-custom);
+        color: var(--color-text-principal);
+    }
+    
+    .reloj .container h2:nth-child(odd){
+        padding: 5px 15px;
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.5);
+        box-shadow:  0 5px 15px rgba(56, 56, 56, 0.288);
+        margin: 0 10px;
+        border-bottom: 1px solid rgba(54, 53, 53, 0.1);
+        border-right: 1px solid rgba(54, 53, 53, 0.1);
+    }
+    
+    #ampm{
+        position: relative;
+        top: -40px;
+        font-size: 2em;
+        font-family: var(--font-custom);
+        color: var(--color-text-principal);
+        font-weight: 700;
+    }
 }
 
-.reloj .container h2{
-    font-size: 6em;
-    font-family: 'Big Shoulders Stencil Display', cursive;
-    color: #000000;
-}
-
-.reloj .container h2:nth-child(odd){
-    padding: 5px 15px;
-    border-radius: 10px;
-    background: rgba(255, 255, 255, 0.5);
-    box-shadow:  0 5px 15px rgba(56, 56, 56, 0.288);
-    margin: 0 10px;
-    border-bottom: 1px solid rgba(54, 53, 53, 0.1);
-    border-right: 1px solid rgba(54, 53, 53, 0.1);
-}
-
-#ampm{
-    position: relative;
-    top: -40px;
-    font-size: 2em;
-    font-family: 'Big Shoulders Stencil Display', cursive;
-    color: #000000;
-    font-weight: 700;
-}
 h4{
     text-decoration: underline;
     text-align: center;
